@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER</title>
+    <link rel="stylesheet" href="weath.css">
+</head>
+<body>
+    <div class="back">
+        <div class="navbar">
+            <div class="h">
+           <H1 class="h1">WEATHER</H1>
+           <div class="but">
+                <button type ="button" data-userweather>HOMETOWN</button>
+                <button type="button">NEWS</button>
+                <button type="button">CLIMATE</button>
+                <button type="button" data-searchweather> SEARCH</button>  
+            </div>
+        </div>
+        </div>
+        <div class="weather-container">
+            <div class="sub-container grantlocation-container">
+                <img src="./Images/location.png" alt="" height="80" width="80" loading="lazy">
+                <p class="gg">
+                    Grant Location Access 
+                </p>
+    
+                <p class="ge">
+                    Allow Access To get Weather Information
+                </p>
+    
+                <button class="btn" data-grantAccess>
+                    Grant Access
+                </button>
+            </div>
+            <form class="form-container" data-searchForm> 
+                <input placeholder="Search for city..." data-searchInput>
+                <button class="btn" type="submit">
+                    <img src="./Images/search.png" alt="" width="20" height="20" loading="lazy">
+                </button>
+            </form>
+
+            <div class="sub-container loading-container">
+                <img src="./Images/loading.gif" alt="" width="150" height="150">
+                <p>loading</p>
+            </div>
+    
+    
+            <div class="sub-container user-info-container">
+                
+                <div class="name">
+                    <p data-cityName></p>
+                    <img data-countryIcon>
+                </div>
+               
+                <p data-weatherDescription></p>
+    
+                <img data-weatherIcon>
+    
+                <p data-temperature></p>
+    
+                <div class="parameter-container">
+    
+                    <div class="parameter">
+                        <img src="./Images/wind.png" alt="">
+                        <p class="w">WINDSPEED</p>
+                        <p data-windSpeed></p>
+                    </div>
+    
+                    <div class="parameter">
+                        <img src="./Images/humidity.png" alt="">
+                        <p class="w">HUMIDITY</p>
+                        <p data-humidity></p>
+                    </div>
+    
+                    <div class="parameter">
+                        <img src="./Images/cloud.png" alt="">
+                        <p class="w">CLOUDS</p>
+                        <p data-cloud></p>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+
+    </div>
+    <script src="weath.js"></script>
+</body>
+</html>
